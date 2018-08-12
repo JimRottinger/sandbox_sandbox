@@ -1,0 +1,18 @@
+{
+  "name": "sandbox-tutorial",
+  "version": "0.0.1",
+  "description": "A tutorial showing how to use a sandboxed iframe",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "iframe",
+    "sandbox"
+  ],
+  "author": "Jim Rottinger",
+  "license": "ISC",
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}
