@@ -1,5 +1,5 @@
 {
-  "name": "sandbox-tutorial",
+  "name": "sandbox-sandbox",
   "version": "0.0.1",
   "description": "A tutorial showing how to use a sandboxed iframe",
   "main": "server.js",
@@ -13,6 +13,8 @@
   "author": "Jim Rottinger",
   "license": "ISC",
   "dependencies": {
-    "http": "0.0.0"
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "path": "^0.12.7"
   }
 }
