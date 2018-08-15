@@ -28,6 +28,7 @@ function serveAsset(rootPath, url, res) {
 }
 
 const host_server = http.createServer((req, res) => {
+  console.log(req.headers)
   serveAsset('host', req.url, res)
 }).listen(host_port, hostname, () => {
   console.log(`Server running at http://${hostname}:${host_port}/`);
@@ -36,5 +37,5 @@ const host_server = http.createServer((req, res) => {
 const client_server = http.createServer((req, res) => {
   serveAsset('client', req.url, res)
 }).listen(client_port, hostname, () => {
-  console.log(`Client running at http://${hostname}:${client_port}/`);
+  console.log(`Client running at http://127.0.0.1:${client_port}/`);
 });

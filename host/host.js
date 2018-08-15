@@ -1,1 +1,1 @@
-alert('hello from the host')
+document.cookie = "session_id=A38XJISDASDW120"
