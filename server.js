@@ -11,6 +11,7 @@ function serveAsset(rootPath, url, res) {
   if (url === '/') url = 'index.html';
 
   const filePath = path.join(__dirname, rootPath, url)
+
   const readStream = fileSystem.createReadStream(filePath)
     .on('error', function() {
       res.statusCode = 404;
